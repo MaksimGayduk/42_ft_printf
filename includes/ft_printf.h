@@ -6,7 +6,7 @@
 /*   By: mgayduk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/18 14:52:28 by mgayduk           #+#    #+#             */
-/*   Updated: 2018/01/25 12:45:13 by mgayduk          ###   ########.fr       */
+/*   Updated: 2018/01/25 14:47:52 by mgayduk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,5 +57,6 @@ int				form_output(va_list ap, t_fq *fq);
 char			*fill_left(char *s, size_t width, size_t len, char c);
 char			*fill_right(char *s, size_t width, size_t len, char c);
 void			form_s(t_fq *fq, va_list ap);
+void			form_c(t_fq *fq, va_list ap);
 
 #endif
