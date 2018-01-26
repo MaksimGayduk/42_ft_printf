@@ -6,7 +6,7 @@
 /*   By: mgayduk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/18 14:52:28 by mgayduk           #+#    #+#             */
-/*   Updated: 2018/01/25 14:47:52 by mgayduk          ###   ########.fr       */
+/*   Updated: 2018/01/26 08:51:06 by mgayduk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ typedef struct	s_format_qualifier
 	char		type;
 	int			indent;
 	char		*str_out;
+	size_t		str_len;
 }				t_fq;
 
 int				ft_printf(const char *format, ...);
