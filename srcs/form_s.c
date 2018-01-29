@@ -6,7 +6,7 @@
 /*   By: mgayduk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/25 12:44:15 by mgayduk           #+#    #+#             */
-/*   Updated: 2018/01/25 12:49:39 by mgayduk          ###   ########.fr       */
+/*   Updated: 2018/01/28 15:54:25 by mgayduk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ void	form_s(t_fq *fq, va_list ap)
 	size_t	len;
 
 	s = ft_strdup(va_arg(ap, char *));
-	if (!s && (fq->str_out = ft_strdup("(null)")))
-		return ;
+	if (!s)
+		s = ft_strdup("(null)");
 	if (fq->precision >= 0 && fq->precision < (int)ft_strlen(t))
 	{
 		t = s;
